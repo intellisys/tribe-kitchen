@@ -1,9 +1,7 @@
-# tribe-kitchen
-
-> Intellisys kitchen app
+# Tribe Kitchen
+> Intellisys Kitchen App
 
 ## Build Setup
-
 ``` bash
 # install dependencies
 npm install
