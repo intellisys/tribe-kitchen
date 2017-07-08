@@ -1,7 +1,25 @@
 # Tribe Kitchen
 > Intellisys Kitchen App
 
-## Build Setup
+# Installation:
+### Requirements:
+* [NodeJS](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
+* [Vue / Vue CLI](https://vuejs.org/)
+
+_Optional:_
+* [Docker](https://www.docker.com/)
+
+### Docker Env Setup
+```bash
+# create the Docker image
+docker build -t tribe-kitchen .
+
+# create the container with the folder mounted
+docker run -p [user_port]:8080 -v [project_path]:/usr/src/app tribe-kitchen
+```
+
+### Local Build Setup
 ``` bash
 # install dependencies
 npm install

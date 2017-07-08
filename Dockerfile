@@ -7,7 +7,6 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Updating Systems and Adding PostgreSql Repo
-RUN npm install --quiet --global \ vue-cli && apt-get update -qq && apt-get install git -y -V &&\
-      cd /usr/src/app && npm install
+RUN npm install --quiet --global \ vue-cli && apt-get update -qq && apt-get install git -y -V
 
-CMD npm run dev
+CMD npm install && npm run dev
