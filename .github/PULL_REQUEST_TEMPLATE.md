@@ -2,10 +2,13 @@
 
 
 ## Status
-**READY/IN DEVELOPMENT/HOLD**
+- [ ] READY
+- [x] IN DEVELOPMENT
+- [ ] HOLD**
 
 ## Migrations
-YES | NO
+- [ ] YES
+- [ ] NO
 
 ## Description
 A few sentences describing the overall goals of the pull request's commits.

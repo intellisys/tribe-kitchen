@@ -1,7 +1,7 @@
 FROM node:7
 
 # Establishing Working Directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copying Files into Directory
 COPY . .
