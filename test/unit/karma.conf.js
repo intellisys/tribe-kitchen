@@ -3,7 +3,7 @@
 // we are also using it with karma-webpack
 //   https://github.com/webpack/karma-webpack
 
-var webpackConfig = require('../../../testing/build/webpack.test.conf')
+var webpackConfig = require('../../../tribe-kitchen/build/webpack.test.conf')
 
 module.exports = function (config) {
   config.set({
