@@ -36,3 +36,12 @@ npm run build --report
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and
 [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### Testing
+
+We've implemented a Unit Testing Suite with [Karma](https://karma-runner.github.io/1.0/index.html),
+[Mocha](https://mochajs.org/) and [PhantomJS](http://phantomjs.org/).
+
+You can create Unit Tests inside the `/test/unit/specs` folder and can run the `npm test` command to run the tests.
+More information about this you can find in the
+[TDD Wiki](https://github.com/intellisys/tribe-kitchen/wiki/Test-Driven-Development-(TDD))
