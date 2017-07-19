@@ -1,24 +1,18 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+  <div>
+<h1>Bienvenidos!</h1>
+<h2>Esperamos que tengas muy buen provecho!</h2>
+<div class="middle-text">
+  <center>
+<p>Estamos trabajando para llevarte una heramienta donde puedas anotarte los dias de comida, ver los menues, ver el monto consumido, entre otras cosas mas. Aun estamos en proceso de desarrollo, sin embargo aun puedes registrarte con tu cuenta de Intellisys y una vez estemos listos  te notificaremos. </p>
+</center>
+
+<md-button class="md-raised md-primary">Log In</md-button>
+</div>
   </div>
 </template>
+
+
 
 <script>
 export default {
@@ -32,11 +26,32 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+<style>
 
+h1 {
+  font-weight: normal;
+  font-family: 'roboto-black';
+  font-size: 25px;
+  color: #76AFBC;
+}
+h2{
+font-size: 18px;
+color: #76AFBC;
+font-family: 'roboto-regular';
+}
+.middle-text{
+  text-align: center;
+    width: 60%;
+        margin: auto;
+    display: block;
+}
+p {
+  color: #76AFBC;
+  font-family: 'roboto-regular';
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+}
 ul {
   list-style-type: none;
   padding: 0;
