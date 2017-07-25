@@ -1,15 +1,14 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
+import Auth from '@/components/Auth.vue'
+import AuthSuccess from '@/components/AuthSuccess.vue'
 import Hello from '@/components/Hello'
-
-Vue.use(Router)
-
-export default new Router({
+const router = new VueRouter({
+  mode: 'history',
   routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
-    }
+    { path: '/', component: Auth },
+    { path: '/auth', component: Auth },
+    { path: '/success', component: AuthSuccess },
+    { path: '/', name: 'Hello', component: Hello }
   ]
 })
+export default router
