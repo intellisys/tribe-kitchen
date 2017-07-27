@@ -5,11 +5,20 @@ import App from './App'
 import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 import firebase from 'firebase'
-// import firebaseui from 'firebaseui'
+import firebaseui from 'firebaseui'
 import router from './router/index'
 import {config} from './helpers/firebaseConfig'
+
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
+Vue.use(firebaseui)
+
+Vue.material.registerTheme('default', {
+  primary: 'white',
+  accent: 'green',
+  warn: 'red',
+  background: 'grey'
+})
 
 Vue.config.productionTip = false
 

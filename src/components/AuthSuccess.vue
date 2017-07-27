@@ -1,13 +1,18 @@
 <template>
   <div>
-    <h1>Signup succeeded</h1>
+    <h1>Gracias por estar pendiente!</h1>
     <button @click='logOut'>Log out</button>
     <hr>
-    <img :src='photo' style=”height:120px”> <br>
+    <md-avatar class="md-large" >
+      <img :src='photo' alt="People" >
+    </md-avatar>
+    <br>
     <p>{{name}}</p>
     <p>{{email}}</p>
     <p>{{userId}}</p>
     <hr>
+    <pre>Aun estamos trabajando para traerte esta herramienta
+    pronto nos pondremos en contacto cuando este lista</pre>
     <pre>{{user}}</pre>
   </div>
 </template>
@@ -30,13 +35,16 @@
       }
     },
     created () {
-      this.user = firebase.auth().currentUser
-      if (this.user) {
-        this.name = this.user.displayName
-        this.email = this.user.email
-        this.photo = this.user.photoURL
-        this.userId = this.user.uid
-      }
+      var vm = this
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          vm.user = user
+          vm.name = vm.user.displayName
+          vm.email = vm.user.email
+          vm.photo = vm.user.photoURL
+          vm.userId = vm.user.uid
+        }
+      })
     }
   }
 </script>

@@ -1,28 +1,19 @@
 <template lang="html">
 
-  <div id="firebaseui-auth-container">
+
  <div>
 <h1>Bienvenidos!</h1>
 <h2>Esperamos que tengas muy buen provecho!</h2>
 
 <div class="middle-text">
-  <center>
+  <div style="text-align: center;">
 <p>Estamos trabajando para llevarte una heramienta donde puedas anotarte los dias de comida, ver los menues, ver el monto consumido, entre otras cosas mas. Aun estamos en proceso de desarrollo, sin embargo aun puedes registrarte con tu cuenta de Intellisys y una vez estemos listos  te notificaremos. </p>
-</center>
-<br><!--
-  <center>
-    <a href="">
-<div class="outside">
-  <div class="icon">
-    <i class="fa fa-google" aria-hidden="true"></i>
-  </div>
-    <div class="text">
-      <span>Sign Up With Google</span>
-    </div>
 </div>
-</a>
-  </center> -->
-</div>
+<br>
+<div id="firebaseui-auth-container"></div>
+
+
+
   </div>
 
   </div>
@@ -47,7 +38,7 @@ export default {
 }
 </script>
 <style>
-
+/*
 h1 {
   font-weight: normal;
   font-family: 'roboto-black';
@@ -116,5 +107,5 @@ a {
   .text{
       padding-top: 10px !important;
   }
-}
+}*/
 </style>
