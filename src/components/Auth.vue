@@ -28,7 +28,17 @@ export default {
     let uiConfig = {
       signInSuccessUrl: '/success',
       signInOptions: [
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        {
+          provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          scopes: [
+            'https://www.googleapis.com/auth/plus.login'
+          ],
+          customParameters: {
+            // Forces account selection even when one account
+            // is available.
+            hd: 'intellisys.com.do'
+          }
+        },
         firebase.auth.EmailAuthProvider.PROVIDER_ID
       ]
     }
