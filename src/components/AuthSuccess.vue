@@ -1,7 +1,7 @@
 <template>
   <div>
     <div clas="personInfo">
-       <hr>
+       <br>
     <md-avatar class="md-large" >
       <img :src='photo' alt="People" >
     </md-avatar>
@@ -13,7 +13,7 @@
     </div>
     <div div="information">
       <center>
-    <h1>Gracias por estar pendiente!</h1>
+    <h1>Gracias por estar pendient!</h1>
     <img class="middle-img" src="../images/takeABreak.png">
 
     <p style="margin: 4%">Aun estamos trabajando para llevarte esta herramienta, tan pronto estemos listos te notificaremos, mientras puedes acercarte al equipo de desarrollo y ver como puedes ayudar!</p>
@@ -21,7 +21,7 @@
     <hr>
     </center>
     </div>
-    <pre>{{user}}</pre>
+   <!-- <pre>{{user}}</pre> -->
   </div>
 </template>
 
