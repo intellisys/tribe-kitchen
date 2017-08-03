@@ -2,21 +2,22 @@
 
 
  <div>
-<h1>Bienvenidos!</h1>
-<h2>Esperamos que tengas muy buen provecho!</h2>
+      <div class="head-text">
+                <h1>Bienvenidos!</h1>
+                <h2>Esperamos que tengas muy buen provecho!</h2>
+      </div>
+      <div class="middle-text">
+        <div>
+          <p>Estamos trabajando para llevarte una heramienta donde puedas anotarte los dias de comida, ver los menues, ver el monto consumido, entre otras cosas mas. Aun estamos en proceso de desarrollo, sin embargo aun puedes registrarte con tu cuenta de Intellisys y una vez estemos listos  te notificaremos. </p>
+        </div>
+        <br>
+        <div id="firebaseui-auth-container"></div>
 
-<div class="middle-text">
-  <div style="text-align: center;">
-<p>Estamos trabajando para llevarte una heramienta donde puedas anotarte los dias de comida, ver los menues, ver el monto consumido, entre otras cosas mas. Aun estamos en proceso de desarrollo, sin embargo aun puedes registrarte con tu cuenta de Intellisys y una vez estemos listos  te notificaremos. </p>
+
+
+  </div>
+
 </div>
-<br>
-<div id="firebaseui-auth-container"></div>
-
-
-
-  </div>
-
-  </div>
 </template>
 <script>
 import firebase from 'firebase'
@@ -48,15 +49,22 @@ export default {
 }
 </script>
 <style>
-/*
+
+.head-text {
+  vertical-align: middle;
+  text-align: center;
+  max-width: 100%;
+  margin: 4%;
+}
+
 h1 {
-  font-weight: normal;
-  font-family: 'roboto-black';
+  font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: #76AFBC;
   font-weight: 800;
 }
 h2{
+margin-top: 2px;
 font-size: 18px;
 color: #76AFBC;
 font-family: 'roboto-regular';
@@ -68,11 +76,10 @@ font-family: 'roboto-regular';
     display: block;
 }
 p {
+  margin-top: 7%;
   color: #76AFBC;
   font-family: 'roboto-regular';
   font-size: 16px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 ul {
   list-style-type: none;
@@ -117,5 +124,25 @@ a {
   .text{
       padding-top: 10px !important;
   }
-}*/
+}
+
+
+@media screen and (min-width: 768px) {
+    .firebaseui-list-item{
+      margin-right: 20px;
+          margin-top: 0px;
+    }
+
+    ul:not(.md-list) > li + li {
+        margin-top: 0px;
+    }
+    ul {
+     display:flex;
+      list-style:none;
+    }
+}
+
+
+
+
 </style>

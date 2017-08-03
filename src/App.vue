@@ -18,4 +18,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }*/
+body{
+   height: 100%;
+
+}
+.app{
+   height: 100%;
+}
 </style>
