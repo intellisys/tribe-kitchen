@@ -64,7 +64,7 @@
   font-family: 'Roboto', sans-serif;
   flex: 1;
    margin-left: 1%;
-
+   color: #76AFBC;
 }
 img {
   max-width: 190px;

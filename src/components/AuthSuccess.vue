@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Gracias por estar pendiente!</h1>
-    <button @click='logOut'>Log out</button>
+    <md-button class="md-raised md-primary" @click='logOut'>Log out</md-button>
     <hr>
     <md-avatar class="md-large" >
       <img :src='photo' alt="People" >
@@ -11,8 +11,9 @@
     <p>{{email}}</p>
     <p>{{userId}}</p>
     <hr>
-    <pre>Aun estamos trabajando para traerte esta herramienta
-    pronto nos pondremos en contacto cuando este lista</pre>
+    <img style="max-width: 970px;" src="../images/takeABreak.png">
+    <p>Aun estamos trabajando para traerte esta herramienta
+    pronto nos pondremos en contacto cuando este lista</p>
     <pre>{{user}}</pre>
   </div>
 </template>
@@ -48,3 +49,11 @@
     }
   }
 </script>
+<style type="text/css">
+*{
+ color:  #76AFBC;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+</style>
