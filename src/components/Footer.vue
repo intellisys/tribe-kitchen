@@ -13,9 +13,8 @@
 <style type="text/css">
 .footer{
   margin: 0px 25px 0px 25px;
-  position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 25px;
   left: 0;
 
 }
